@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_corner10"
+    android:paddingBottom="10px"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="25px"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/dialog_health_monitor_type_btn"
+            android:layout_width="160px"
+            android:layout_height="50px"
+            android:layout_marginLeft="25px"
+            android:background="@drawable/bg_edittext_normal"
+            android:clickable="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dialog_health_monitor_type_tv"
+                android:text="血氧"
+                android:layout_width="100px"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#35465f"
+                android:textSize="24px" />
+
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:src="@drawable/canlendardown" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/dialog_health_monitor_date_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_marginLeft="25px"
+            android:background="@drawable/bg_edittext_normal"
+            android:clickable="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:paddingRight="10px"
+                android:paddingLeft="10px"
+                android:singleLine="true"
+                android:id="@+id/dialog_health_monitor_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#35465f"
+                android:textSize="24px" />
+
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:src="@drawable/canlendardown" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/act_healthytest_indicator_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="25px"
+        android:gravity="left">
+
+        <ImageView
+            android:id="@+id/act_healthytest_indicator_green_iv"
+            android:layout_width="15px"
+            android:layout_height="15px"
+            android:layout_centerVertical="true"
+            android:src="@drawable/round_green_shape" />
+
+        <ImageView
+            android:id="@+id/act_healthytest_indicator_blue_iv"
+            android:layout_width="15px"
+            android:layout_height="15px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50px"
+            android:layout_toEndOf="@+id/act_healthytest_indicator_green_tv"
+            android:src="@drawable/round_blue_shape" />
+
+        <TextView
+            android:id="@+id/act_healthytest_indicator_green_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/act_healthytest_indicator_green_iv"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="血氧"
+            android:textColor="#666666"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/act_healthytest_indicator_blue_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/act_healthytest_indicator_green_tv"
+            android:layout_alignBottom="@+id/act_healthytest_indicator_green_tv"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5px"
+            android:layout_marginStart="104px"
+            android:layout_toEndOf="@+id/act_healthytest_indicator_blue_iv"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="心率"
+            android:textColor="#666666"
+            android:textSize="24px"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_marginTop="25px"
+        android:layout_width="1500px"
+        android:layout_height="800px">
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/dialog_health_monitor_chart"
+            android:layout_width="1500px"
+            android:layout_height="800px"
+            android:orientation="vertical" />
+
+        <ProgressBar
+            android:id="@+id/dialog_health_pb"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

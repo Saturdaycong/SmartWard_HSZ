@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:tools="http://schemas.android.com/tools"
+                                    android:layout_width="1052px"
+                                    android:layout_height="740px"
+                                    android:background="@drawable/shape_white_corner10">
+    <include layout="@layout/layout_display_warn_lable"/>
+
+    <include layout="@layout/layout_edit_warn_lable"
+        android:visibility="gone"/>
+</com.zhy.autolayout.AutoFrameLayout>

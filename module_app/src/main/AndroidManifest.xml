@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.ekz.ctt.app"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
+    <!--android:sharedUserId="android.uid.system"-->
+
+    <application
+        android:icon="@drawable/icon_office"
+        android:allowBackup="true"
+        android:appComponentFactory="ctk"
+        tools:replace="android:appComponentFactory"
+        android:name="com.ekz.ctt.app.SmartWardApplication"
+        android:supportsRtl="true"
+        android:label="@string/app_name"
+        android:theme="@style/public_AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <meta-data
+            android:name="design_width"
+            android:value="1920"/>
+        <meta-data
+            android:name="design_height"
+            android:value="1080"/>
+    </application>
+</manifest>

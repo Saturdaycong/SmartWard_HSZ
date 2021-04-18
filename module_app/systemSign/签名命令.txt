@@ -1,0 +1,24 @@
+java -jar signapk.jar platform.x509.pem platform.pk8 app-debug.apk appctk.apk
+
+
+
+
+
+
+
+
+
+
+
+
+
+输入密码android，默认是android，
+
+ at java.util.zip.ZipFile$ZipEntryIterator.next(Unknown Source)
+        at java.util.zip.ZipFile$ZipEntryIterator.nextElement(Unknown Source)
+        at java.util.zip.ZipFile$ZipEntryIterator.nextElement(Unknown Source)
+        at java.util.jar.JarFile$JarEntryIterator.next(Unknown Source)
+        at java.util.jar.JarFile$JarEntryIterator.nextElement(Unknown Source)
+        at java.util.jar.JarFile$JarEntryIterator.nextElement(Unknown Source)
+        at com.android.signapk.SignApk.addDigestsToManifest(SignApk.java:175)
+        at com.android.signapk.SignApk.main(SignApk.java:325)

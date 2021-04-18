@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     android:layout_width="1300px"
+                                     android:layout_height="match_parent"
+                                     android:background="@drawable/shape_e3_corner10"
+                                     android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="1300px"
+        android:layout_height="70px"
+        android:background="@drawable/shape_white_corner10">
+
+        <TextView
+            android:id="@+id/dialog_patient_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="17床-张三"
+            android:textColor="@color/public_text_60"
+            android:textSize="28px"/>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/dialog_patient_close_btn"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="37px"
+                android:layout_height="37px"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_close"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="1300px"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/act_department_rv"
+            android:layout_width="160px"
+            android:layout_height="match_parent"
+            android:layout_margin="20px"
+            android:background="@drawable/shape_white_corner10">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <com.zhy.autolayout.AutoFrameLayout
+            android:id="@+id/act_setting_fragment_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="20px">
+        </com.zhy.autolayout.AutoFrameLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.hsz.module_whiteboard"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity android:name=".mvp.ui.activity.WhiteBoardActivity">
+        </activity>
+    </application>
+
+</manifest>

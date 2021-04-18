@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.yanglao.ctt.eckctt"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:largeHeap="true"
+        android:name="debug.YaolaoApplication"
+        android:allowBackup="true"
+        android:networkSecurityConfig="@xml/network_config"
+        android:appComponentFactory="111"
+        android:icon="@drawable/daishu"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MainTheme"
+        android:hardwareAccelerated="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:appComponentFactory">
+
+        <meta-data
+            android:name="com.netease.nim.appKey"
+            android:value="45c6af3c98409b18a84451215d0bdd6e"/>
+
+        <activity android:name="com.yanglao.ctt.eckctt.mvp.ui.activity.WebActivity"></activity>
+        <activity android:name="com.yanglao.ctt.eckctt.mvp.ui.activity.HealthMonitorActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/MainTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.HOME" />
+                <!-- <category android:name="android.intent.category.MONKEY" /> -->
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.yanglao.ctt.eckctt.mvp.ui.activity.FirstImageActivity" />
+        <!--
+        autolayout meta
+        配置设计图的宽高, 配合 AutoLayout 控件使用, 在设计图尺寸以外的其它尺寸手机上, 也能达到和设计图一样的效果
+        注意: 本框架并不强制您使用 AutoLayout, 如果您不想使用 AutoLayout, 就不要配置下面的 meta-data
+        -->
+
+        <meta-data
+            android:name="design_width"
+            android:value="1920"/>
+        <meta-data
+            android:name="design_height"
+            android:value="1080"/>
+    </application>
+
+</manifest>

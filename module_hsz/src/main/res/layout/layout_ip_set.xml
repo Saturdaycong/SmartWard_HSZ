@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                       android:layout_width="1200px"
+                                       android:layout_height="950px"
+                                       android:background="@drawable/shape_white_corner10">
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="89px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="系统设置"
+            android:textColor="#474B60"
+            android:textSize="50px"/>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/layout_ip_set_close_btn"
+            android:layout_width="89px"
+            android:layout_height="89px"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_close"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="89px"
+        android:background="#E3E3FF"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120px"
+        android:gravity="end"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IP地址:"
+                android:textColor="#474B60"
+                android:textSize="30px"/>
+
+            <EditText
+                android:id="@+id/act_setting_ip_et"
+                android:layout_width="450px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5px"
+                android:hint="请输入服务器地址"
+                android:paddingLeft="10px"
+                android:textColor="@color/theme_blue"
+                android:textColorHint="@color/public_text_99"
+                android:textSize="30px"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="科室编号:"
+                android:textColor="#474B60"
+                android:textSize="30px"/>
+
+            <EditText
+                android:id="@+id/act_setting_departmentcode_et"
+                android:layout_width="450px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5px"
+                android:hint="如:眼科-1125，多个科室用英文逗号隔开"
+                android:paddingLeft="10px"
+                android:textColor="@color/theme_blue"
+                android:textColorHint="@color/public_text_99"
+                android:textSize="30px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="布局大小:"
+                android:textColor="#474B60"
+                android:textSize="30px"/>
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/act_setting_layout_et"
+                android:layout_width="450px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5px"
+                android:hint="默认0(小)，1(中)2(大)"
+                android:paddingLeft="10px"
+                android:textColor="@color/theme_blue"
+                android:textColorHint="@color/public_text_99"
+                android:textSize="30px"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="刷新频率（分钟）:"
+                android:textColor="#474B60"
+                android:textSize="30px"/>
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/act_setting_refreshrate_et"
+                android:layout_width="450px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5px"
+                android:hint="默认3分钟"
+                android:paddingLeft="10px"
+                android:textColor="@color/theme_blue"
+                android:textColorHint="@color/public_text_99"
+                android:textSize="30px"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+ <com.zhy.autolayout.AutoLinearLayout
+     android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WIFI名称:"
+                android:textColor="#474B60"
+                android:textSize="30px"/>
+
+            <EditText
+                android:id="@+id/act_setting_wiifname_et"
+                android:layout_width="450px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5px"
+                android:hint="选填"
+                android:paddingLeft="10px"
+                android:textColor="@color/theme_blue"
+                android:textColorHint="@color/public_text_99"
+                android:textSize="30px"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+ <com.zhy.autolayout.AutoLinearLayout
+     android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WIFI密码:"
+                android:textColor="#474B60"
+                android:textSize="30px"/>
+
+            <EditText
+                android:inputType="textPassword"
+                android:text=""
+                android:id="@+id/act_setting_wifipwd_et"
+                android:layout_width="450px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5px"
+                android:hint="选填"
+                android:paddingLeft="10px"
+                android:textColor="@color/theme_blue"
+                android:textColorHint="@color/public_text_99"
+                android:textSize="30px"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:visibility="gone"
+            android:id="@+id/act_setting_authcode_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="授权码:"
+                android:textColor="#474B60"
+                android:textSize="30px"/>
+
+            <EditText
+                android:inputType="textPassword"
+                android:text=""
+                android:id="@+id/act_setting_authcode_et"
+                android:layout_width="450px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5px"
+                android:hint="请输入授权码"
+                android:paddingLeft="10px"
+                android:textColor="@color/theme_blue"
+                android:textColorHint="@color/public_text_99"
+                android:textSize="30px"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+          <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/act_setting_baudRate_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="波特率:"
+                android:textColor="#474B60"
+                android:textSize="30px"/>
+
+              <EditText
+                  android:id="@+id/act_setting_baudRate_et"
+                  android:layout_width="450px"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="5px"
+                  android:hint="请输入呼叫设备波特率"
+                  android:inputType="number"
+                  android:paddingLeft="10px"
+                  android:text=""
+                  android:textColor="@color/theme_blue"
+                  android:textColorHint="@color/public_text_99"
+                  android:textSize="30px" />
+          </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <TextView
+            android:id="@+id/act_setting_save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="40px"
+            android:background="@drawable/shape_red_corner10"
+            android:drawablePadding="20px"
+            android:paddingBottom="7px"
+            android:paddingLeft="45px"
+            android:paddingRight="45px"
+            android:paddingTop="7px"
+            android:text="保存"
+            android:textColor="@color/app_white"
+            android:textSize="30px"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50px"
+        android:layout_marginRight="60px"
+        android:orientation="horizontal">
+        <com.zhy.autolayout.AutoLinearLayout
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Switch
+                android:id="@+id/layout_ip_set_wifi_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="25px"
+                android:text="自动重连WIFI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/act_setting_reboot_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:background="@drawable/shape_red_corner10"
+            android:drawableLeft="@drawable/icon_reboot"
+            android:drawablePadding="20px"
+            android:gravity="center_vertical"
+            android:paddingBottom="7px"
+            android:paddingLeft="45px"
+            android:paddingRight="45px"
+            android:paddingTop="7px"
+            android:text="重启"
+            android:textColor="@color/app_white"
+            android:textSize="30px"/>
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/act_setting_shutdown_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:background="@drawable/shape_red_corner10"
+            android:drawableLeft="@drawable/icon_shutdown"
+            android:drawablePadding="20px"
+            android:gravity="center_vertical"
+            android:paddingBottom="7px"
+            android:paddingLeft="45px"
+            android:paddingRight="45px"
+            android:paddingTop="7px"
+            android:text="关机"
+            android:textColor="@color/app_white"
+            android:textSize="30px"/>
+
+        <TextView
+            android:id="@+id/act_setting_sysset_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:background="@drawable/shape_red_corner10"
+            android:drawableLeft="@drawable/icon_sys_set"
+            android:drawablePadding="20px"
+            android:gravity="center_vertical"
+            android:paddingBottom="7px"
+            android:paddingLeft="45px"
+            android:paddingRight="45px"
+            android:paddingTop="7px"
+            android:text="设置"
+            android:textColor="@color/app_white"
+            android:textSize="30px"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

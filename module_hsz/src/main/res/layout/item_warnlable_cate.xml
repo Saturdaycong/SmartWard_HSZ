@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_marginTop="5px"
+              android:layout_width="260px"
+              android:layout_height="50px">
+        <TextView
+            android:id="@+id/item_warnlable_cate_tv"
+            android:gravity="center"
+            android:textColor="@color/theme_blue"
+            android:textSize="20px"
+            android:text="一级护理"
+            android:layout_width="260px"
+            android:layout_height="40px"/>
+</LinearLayout>

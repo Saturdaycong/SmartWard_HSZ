@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">康养平台-Android</string>
+    <string name="none_info_tip">暂无体检数据，请尽快进行体检!</string>
+    <string name="pressure_title">健康体检</string>
+</resources>

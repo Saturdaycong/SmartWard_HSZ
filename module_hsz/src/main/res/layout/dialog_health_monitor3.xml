@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     android:layout_width="989px"
+                                     android:layout_height="611px"
+                                     android:background="@drawable/shape_white_corner10"
+                                     android:orientation="vertical">
+
+    <com.ekz.ctt.eckctt.app.widget.zoom.PhotoView
+        android:layout_width="989px"
+        android:layout_height="611px"
+        android:src="@drawable/health_04"/>
+</com.zhy.autolayout.AutoLinearLayout>

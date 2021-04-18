@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:background="@drawable/shape_white_corner5"
+                                     android:orientation="vertical"
+                                     android:paddingLeft="8px"
+                                     android:paddingRight="8px"
+                                     android:elevation="2px"
+                                     android:id="@+id/item_main_patient_root"
+                                     android:layout_marginLeft="8px"
+                                     android:layout_marginTop="8px"
+                                     android:paddingBottom="4px">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="76px"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:lines="1"
+            android:id="@+id/item_main_patient_bennum_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="01床"
+            android:textColor="#474B60"
+            android:textSize="22px"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_marginTop="3px"
+        android:layout_width="76px"
+        android:layout_height="1px"
+        android:background="#E3E3FF"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/item_all_patient_hasbody_all"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="5px"
+            android:lines="1"
+            android:id="@+id/item_main_patient_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="李某某"
+            android:textColor="@color/theme_blue"
+            android:textSize="22px"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_marginTop="10px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:lines="1"
+                android:id="@+id/item_main_patient_sex_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:textColor="#7A7E97"
+                android:textSize="18px"/>
+
+            <TextView
+                android:lines="1"
+                android:id="@+id/item_main_patient_age_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5px"
+                android:text="27岁"
+                android:textColor="#7A7E97"
+                android:textSize="18px"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

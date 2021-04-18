@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:background="@drawable/shape_white_corner10"
+                                     android:gravity="center"
+                                     android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300px"
+        android:layout_marginRight="300px"
+        android:gravity="center_vertical"
+        android:layout_marginTop="160px"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/dialog_call_pb"
+            android:layout_width="60px"
+            android:layout_height="60px"/>
+
+        <TextView
+            android:layout_marginLeft="50px"
+            android:id="@+id/dialog_call_bedbun_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01床"
+            android:textColor="@color/theme_red"
+            android:textSize="70px"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="160px"
+        android:layout_marginTop="100px"
+        android:text="正在呼叫"
+        android:textColor="#474B60"
+        android:textSize="60px"/>
+</com.zhy.autolayout.AutoLinearLayout>

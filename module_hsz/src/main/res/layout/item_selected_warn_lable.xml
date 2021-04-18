@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="50px"
+                                       android:layout_marginTop="10px"
+                                       android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_addlable_content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:gravity="start|center_vertical"
+        android:text=""
+        android:textColor="@color/theme_blue"
+        android:textSize="22px"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/item_selected_delete_btn"
+        android:layout_width="60px"
+        android:layout_height="50px"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_delete"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

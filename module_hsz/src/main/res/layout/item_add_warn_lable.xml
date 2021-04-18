@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_marginTop="10px"
+              android:layout_width="366px"
+              android:layout_height="50px">
+        <TextView
+            android:id="@+id/item_addlable_content_tv"
+            android:gravity="center"
+            android:textSize="22px"
+            android:text=""
+            android:layout_width="366px"
+            android:layout_height="50px"/>
+</LinearLayout>

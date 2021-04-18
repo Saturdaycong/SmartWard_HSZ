@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:tools="http://schemas.android.com/tools"
+                                    android:layout_width="1052px"
+                                    android:background="@drawable/shape_white_corner10"
+                                    android:layout_height="740px">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/frag_oxy_record_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:visibility="gone"
+        android:id="@+id/frag_oxy_record_detail_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="69px">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/frag_oxy_record_back_btn"
+                android:layout_width="69px"
+                android:layout_height="69px">
+
+                <ImageView
+                    android:layout_width="28px"
+                    android:layout_height="28px"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/icon_gray_back"/>
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <TextView
+                android:id="@+id/frag_oxy_record_titletime_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="2019年7月29日 15:03"
+                android:textColor="@color/public_text_60"
+                android:textSize="28px"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="执行护士:"
+                    android:textColor="@color/public_text_60"
+                    android:textSize="28px"/>
+
+                <TextView
+                    android:id="@+id/frag_oxy_record_donurse_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:text="张三"
+                    android:textColor="@color/theme_red"
+                    android:textSize="28px"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <View
+            android:background="@color/public_bg_f3"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90px"
+            android:layout_marginRight="90px"
+            android:layout_marginTop="100px"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/dialog_health_left_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_oxy_flow"
+                        android:drawablePadding="10px"
+                        android:gravity="center_vertical"
+                        android:text="流量"
+                        android:textColor="#474B60"
+                        android:textSize="24px"/>
+
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/frag_oxy_record_flow_et"
+                        android:layout_width="150px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:paddingBottom="10px"
+                        android:text="36.0"
+                        android:textColor="@color/theme_blue"
+                        android:textSize="28px"/>
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_start_time"
+                        android:drawablePadding="10px"
+                        android:gravity="center_vertical"
+                        android:text="开始时间"
+                        android:textColor="#474B60"
+                        android:textSize="24px"/>
+
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/frag_oxy_record_starttime_et"
+                        android:layout_width="150px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:paddingBottom="10px"
+                        android:text="70"
+                        android:textColor="@color/theme_blue"
+                        android:textSize="28px"/>
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_oxy_sum"
+                        android:drawablePadding="10px"
+                        android:gravity="center_vertical"
+                        android:text="吸氧总量"
+                        android:textColor="#474B60"
+                        android:textSize="24px"/>
+
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/frag_oxy_record_sum_et"
+                        android:layout_width="150px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:paddingBottom="10px"
+                        android:text="1L"
+                        android:textColor="@color/theme_blue"
+                        android:textSize="28px"/>
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/dialog_health_right_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120px"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_oxy_nongdu"
+                        android:drawablePadding="10px"
+                        android:gravity="center_vertical"
+                        android:text="浓度"
+                        android:textColor="#474B60"
+                        android:textSize="24px"/>
+
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/frag_oxy_record_density_et"
+                        android:layout_width="150px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:paddingBottom="10px"
+                        android:text="98%"
+                        android:textColor="@color/theme_blue"
+                        android:textSize="28px"/>
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_time"
+                        android:drawablePadding="10px"
+                        android:gravity="center_vertical"
+                        android:text="计时"
+                        android:textColor="#474B60"
+                        android:textSize="24px"/>
+
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/frag_oxy_record_time_et"
+                        android:layout_width="150px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:paddingBottom="10px"
+                        android:text="00:10:22"
+                        android:textColor="@color/theme_blue"
+                        android:textSize="28px"/>
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_oxy_fee_sum"
+                        android:drawablePadding="10px"
+                        android:gravity="center_vertical"
+                        android:text="吸氧费用"
+                        android:textColor="#474B60"
+                        android:textSize="24px"/>
+
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/frag_oxy_record_fee_et"
+                        android:layout_width="150px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:gravity="center_horizontal"
+                        android:inputType="number"
+                        android:paddingBottom="10px"
+                        android:text="100元"
+                        android:textColor="@color/theme_blue"
+                        android:textSize="28px"/>
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoFrameLayout>

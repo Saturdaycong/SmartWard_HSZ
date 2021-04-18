@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="450px"
+    android:layout_marginTop="18px"
+    android:id="@+id/item_health_nav_root"
+    android:background="@drawable/selector_item_bg"
+    android:layout_height="132px">
+
+<com.zhy.autolayout.AutoLinearLayout
+    android:id="@+id/item_health_left_all"
+    android:layout_marginLeft="38px"
+    android:layout_centerVertical="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/item_health_nav_icon"
+        android:src="@drawable/selector_item_health_oxy"
+        android:layout_width="51px"
+        android:layout_height="53px"/>
+    <TextView
+        android:id="@+id/item_health_nav_title"
+        android:layout_marginTop="15px"
+        android:textColor="@color/black"
+        android:textSize="28px"
+        android:text="血压"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:gravity="right"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/item_health_left_all"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="38px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:lines="1"
+            android:id="@+id/item_health_nav_status"
+            android:layout_marginTop="10px"
+            android:textSize="18px"
+            android:text="正常血压"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/item_health_nav_value"
+            android:layout_marginTop="10px"
+            android:textColor="@color/black"
+            android:textSize="32px"
+            android:text="122/77"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/item_health_nav_time"
+            android:layout_marginTop="8px"
+            android:textColor="@color/public_text_66"
+            android:textSize="15px"
+            android:text="2019-10-31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

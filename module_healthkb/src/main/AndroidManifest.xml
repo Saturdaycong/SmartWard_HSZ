@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.yanglao.ctt.eckctt"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <application>
+        <activity android:name="com.yanglao.ctt.eckctt.mvp.ui.activity.WebActivity"></activity>
+        <activity android:name=".mvp.ui.activity.HealthMonitorActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/MainTheme">
+        </activity>
+<!--        <activity android:name=".mvp.ui.activity.MainActivity"></activity> &lt;!&ndash;  &ndash;&gt;-->
+        <activity android:name="com.yanglao.ctt.eckctt.mvp.ui.activity.FirstImageActivity" />
+
+    </application>
+
+</manifest>

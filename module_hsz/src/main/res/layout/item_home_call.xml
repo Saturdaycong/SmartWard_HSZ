@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="40px"
+                                       android:id="@+id/item_home_call_arl"
+                                       android:gravity="center_vertical"
+                                       android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_home_call_bednum_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:text="01床"
+        android:textColor="@color/selector_call_text"
+        android:textSize="18px"/>
+
+    <TextView
+        android:layout_toRightOf="@id/item_home_call_bednum_tv"
+        android:id="@+id/item_home_call_createtime_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:text="2019-7-25 18:20"
+        android:textColor="@color/selector_call_text"
+        android:textSize="18px"/>
+
+    <TextView
+        android:layout_toRightOf="@id/item_home_call_createtime_tv"
+        android:id="@+id/item_home_call_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:text="30s"
+        android:textColor="@color/selector_call_text"
+        android:textSize="18px"/>
+</com.zhy.autolayout.AutoRelativeLayout>

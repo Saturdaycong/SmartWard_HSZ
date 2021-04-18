@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="62px"
+    android:layout_height="78px"
+    android:gravity="center_horizontal"
+    android:id="@+id/item_check_all"
+    android:background="@drawable/data_item_bg"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_marginTop="5px"
+        android:id="@+id/item_check_icon"
+        android:src="@drawable/xya_l_x"
+        android:layout_width="22px"
+        android:layout_height="21px"/>
+    <TextView
+        android:id="@+id/item_check_title"
+        android:layout_marginTop="3px"
+        android:textColor="@color/selector_health_check"
+        android:textSize="12px"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+     <TextView
+        android:id="@+id/item_check_value"
+        android:layout_marginTop="7px"
+        android:textColor="@color/selector_health_check"
+        android:textSize="12px"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</com.zhy.autolayout.AutoLinearLayout>

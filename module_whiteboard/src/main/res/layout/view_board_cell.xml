@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     android:layout_width="match_parent"
+                                     android:orientation="horizontal"
+                                     android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/view_cell_title_tv"
+        android:gravity="center"
+        android:textColor="@color/theme_red"
+        android:text=""
+        android:layout_width="0px"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+
+    <EditText
+        android:background="@null"
+        android:id="@+id/view_cell_content_et"
+        android:gravity="center"
+        android:textColor="@color/cell_content_color"
+        android:textSize="@dimen/board_cell_textsize"
+        android:text=""
+        android:layout_width="0px"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+</com.zhy.autolayout.AutoLinearLayout>

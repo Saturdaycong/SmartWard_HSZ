@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@drawable/shape_f2_30"
+    android:paddingLeft="45px"
+    android:paddingRight="45px"
+    android:paddingTop="24px"
+    android:paddingBottom="24px"
+    android:layout_width="1380px"
+    android:layout_height="782px">
+
+    <!--左边导航栏-->
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_gravity="center_vertical"
+    android:id="@+id/dialog_health_chart_rv"
+    android:layout_width="wrap_content"
+    android:layout_height="700px"/>
+
+    <!--折线图区域-->
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="800px"
+        android:layout_height="700px"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20px"
+        android:background="@drawable/shape_white_30">
+
+        <!--日期-->
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/dialog_health_chart_date_all"
+            android:layout_width="300px"
+            android:layout_height="50px"
+            android:layout_marginLeft="25px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/bg_edittext_normal">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/dialog_health_datepicker_arrow_iv"
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="8px"
+                android:src="@drawable/canlendardown" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/dialog_health_datepicker_arrow_iv"
+                android:id="@+id/dialog_health_datepicker_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:lines="1"
+                android:textColor="#35465f"
+                android:textSize="20px" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <!--指示器-->
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/dialog_health_indicator_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_health_chart_date_all"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="15px"
+            android:gravity="left">
+
+            <ImageView
+                android:id="@+id/dialog_health_indicator_blue_iv"
+                android:layout_width="15px"
+                android:layout_height="15px"
+                android:layout_centerVertical="true"
+                android:src="@drawable/round_blue_shape" />
+
+            <ImageView
+                android:id="@+id/dialog_health_indicator_green_iv"
+                android:layout_width="15px"
+                android:layout_height="15px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50px"
+                android:layout_toRightOf="@+id/dialog_health_indicator_blue_tv"
+                android:src="@drawable/round_green_shape" />
+
+            <TextView
+                android:id="@+id/dialog_health_indicator_blue_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5px"
+                android:layout_toRightOf="@+id/dialog_health_indicator_blue_iv"
+                android:gravity="center_vertical|center_horizontal"
+                android:text=""
+                android:textColor="@color/black_6"
+                android:textSize="24px" />
+
+            <TextView
+                android:id="@+id/dialog_health_indicator_green_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5px"
+                android:layout_toRightOf="@+id/dialog_health_indicator_green_iv"
+                android:gravity="center_vertical|center_horizontal"
+                android:text=""
+                android:textColor="@color/black_6"
+                android:textSize="24px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <!--折线图-->
+        <com.zhy.autolayout.AutoFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/dialog_health_indicator_rl"
+            android:layout_centerVertical="true">
+
+            <ProgressBar
+                android:id="@+id/dialog_health_chart_pb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/dialog_health_chart_ll"
+                android:layout_width="818px"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="25px"
+                android:paddingLeft="30px"></com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoFrameLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

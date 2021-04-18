@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+                                     android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="11px"
+        android:textColor="@color/public_text_99"
+        android:textSize="22px"
+        android:text="尚未选择床头警示标识"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</com.zhy.autolayout.AutoLinearLayout>

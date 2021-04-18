@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/act_healthytest_top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:background="@color/testselectcolor"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/pressure_title"
+            android:textColor="@color/white"
+            android:textSize="34px"/>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/act_healthytest_back_rl"
+            android:layout_width="100px"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/act_healthytest_back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/button_back"
+                android:padding="20px"
+                android:textColor="@color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:paddingRight="10px"
+            android:paddingLeft="10px"
+            android:id="@+id/act_healthy_test_set_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:layout_marginRight="15px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/act_healthytest_set_iv"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:src="@drawable/setting" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:visibility="gone"
+            android:id="@+id/act_healthy_test_sync_ll"
+            android:paddingRight="10px"
+            android:paddingLeft="10px"
+            android:layout_toLeftOf="@id/act_healthy_test_set_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginRight="15px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/act_healthy_test_sync_iv"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:src="@drawable/sync" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <TextView
+            android:visibility="gone"
+            android:paddingRight="10px"
+            android:paddingLeft="10px"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginRight="90px"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/refresh_ble"
+            android:text="上传数据"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_below="@+id/act_healthytest_top_rl">
+
+        <ScrollView
+            android:background="@color/testlistbgcolor"
+            android:id="@+id/act_healthy_nav_slv"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/act_healthytest_navigator_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:background="#efefef"
+                android:paddingTop="10px"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:paddingBottom="10px">
+
+                <Button
+                    android:gravity="center"
+                    android:id="@+id/act_healthytest_xueya_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="82px"
+                    android:textSize="26px"
+                    android:background="@drawable/selector_measure_btn"
+                    android:text="血压"
+                    android:textColor="@color/selector_color_measure_btn"/>
+
+                <Button
+                    android:gravity="center"
+                    android:id="@+id/act_healthytest_xueyang_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="82px"
+                    android:textSize="26px"
+                    android:text="血氧"
+                    android:textColor="@color/selector_color_measure_btn"
+                    android:background="@drawable/selector_measure_btn" />
+
+                <Button
+                    android:gravity="center"
+                    android:id="@+id/act_healthytest_tizhong_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="82px"
+                    android:textSize="26px"
+                    android:textColor="@color/selector_color_measure_btn"
+                    android:background="@drawable/selector_measure_btn"
+                    android:text="体重"/>
+
+                <Button
+                    android:gravity="center"
+                    android:id="@+id/act_healthytest_tiwen_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="82px"
+                    android:background="@drawable/selector_measure_btn"
+                    android:text="体温"
+                    android:textColor="@color/selector_color_measure_btn"
+                    android:textSize="26px" />
+
+                <Button
+                    android:gravity="center"
+                    android:id="@+id/act_healthytest_yaowei_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="82px"
+                    android:textSize="26px"
+                    android:textColor="@color/selector_color_measure_btn"
+                    android:background="@drawable/selector_measure_btn"
+                    android:text="腰围"/>
+
+                <Button
+                    android:gravity="center"
+                    android:id="@+id/act_healthytest_xuetang_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="82px"
+                    android:textSize="26px"
+                    android:textColor="@color/selector_color_measure_btn"
+                    android:background="@drawable/selector_measure_btn"
+                    android:text="血糖"/>
+
+                <Button
+                    android:gravity="center"
+                    android:id="@+id/act_healthytest_niaosuan_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="82px"
+                    android:textSize="26px"
+                    android:textColor="@color/selector_color_measure_btn"
+                    android:background="@drawable/selector_measure_btn"
+                    android:text="尿酸"/>
+
+                <Button
+                    android:gravity="center"
+                    android:id="@+id/act_healthytest_danguchun_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="82px"
+                    android:textSize="26px"
+                    android:textColor="@color/selector_color_measure_btn"
+                    android:background="@drawable/selector_measure_btn"
+                    android:text="胆固醇" />
+                <Button
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:id="@+id/act_healthytest_bloodfat_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="82px"
+                    android:textSize="26px"
+                    android:textColor="@color/selector_color_measure_btn"
+                    android:background="@drawable/selector_measure_btn"
+                    android:text="血脂"/>
+
+                <Button
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:id="@+id/act_healthytest_urine_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="82px"
+                    android:textSize="26px"
+                    android:textColor="@color/selector_color_measure_btn"
+                    android:background="@drawable/selector_measure_btn"
+                    android:text="尿液"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+        </ScrollView>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_weight="4"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/act_healthy_nav_slv">
+
+
+            <!--右侧指导建议部分-->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:orientation="vertical"
+                android:id="@+id/act_healthytest_measure_result_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/act_healthy_ble_connectstatus_ll"
+                    android:layout_marginTop="8px"
+                    android:layout_marginLeft="20px"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:textColor="#35465f"
+                        android:textSize="22px"
+                        android:text="设备连接状态："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/act_healthy_ble_connectstatus_tv"
+                        android:layout_marginLeft="5px"
+                        android:textColor="@color/gray"
+                        android:textSize="22px"
+                        android:text="未绑定"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <FrameLayout
+                        android:layout_marginLeft="18px"
+                        android:layout_width="100px"
+                        android:layout_height="40px">
+
+                        <TextView
+                            android:visibility="invisible"
+                            android:id="@+id/act_healthy_ble_hand_tv"
+                            android:layout_width="100px"
+                            android:layout_height="40px"
+                            android:text="手动连接"
+                            android:gravity="center"
+                            android:textSize="20px"
+                            android:background="@drawable/bg_edittext_green"
+                            android:textColor="@color/testselectcolor"
+                            android:src="@drawable/bg_edittext_green" />
+                        <ProgressBar
+                            android:visibility="gone"
+                            android:id="@+id/act_healthy_ble_hand_pb"
+                            android:layout_marginLeft="15px"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="26px"
+                            android:layout_height="26px"/>
+                    </FrameLayout>
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_marginTop="15px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:background="@color/white">
+                    <TextView
+                        android:id="@+id/act_healthytest_measureresult_title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="检测结果 ： "
+                        android:textColor="#35465f"
+                        android:textSize="22px" />
+
+                    <TextView
+                        android:id="@+id/act_healthytest_measureresult_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#45d0d7"
+                        android:textSize="22px"
+                        android:layout_alignBaseline="@+id/act_healthytest_measureresult_title_tv"
+                        android:layout_alignBottom="@+id/act_healthytest_measureresult_title_tv" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <TextView
+                    android:layout_marginTop="15px"
+                    android:layout_marginLeft="20px"
+                    android:id="@+id/act_healthytest_standard_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#35465f"
+                    android:textSize="22px"/>
+
+                <ScrollView
+                    android:layout_marginLeft="20px"
+                    android:layout_width="match_parent"
+                    android:layout_height="250px"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="10px"
+                    android:paddingBottom="5px"
+                    android:paddingRight="10px"
+                    android:id="@+id/scrollView">
+                    <TextView
+                        android:lineSpacingMultiplier="1.5"
+                        android:id="@+id/act_healthytest_measure_suggest_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/scrollView"
+                        android:textColor="#35465f"
+                        android:textSize="22px" />
+                </ScrollView>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:id="@+id/act_healthytest_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/act_healthytest_measure_result_ll"
+                android:background="@color/color_grayd9" />
+
+            <!--折线图区域-->
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_below="@+id/act_healthytest_divider">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/act_healthytest_datepicker_ll"
+                    android:layout_width="260px"
+                    android:layout_height="50px"
+                    android:layout_marginTop="20px"
+                    android:layout_marginLeft="25px"
+                    android:clickable="true"
+                    android:background="@drawable/bg_edittext_normal"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/act_healthytest_datepicker_tv"
+                        android:layout_width="220px"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:textColor="#35465f"
+                        android:textSize="20px" />
+
+                    <ImageView
+                        android:layout_marginLeft="5px"
+                        android:id="@+id/act_healthytest_datepicker_arrow_iv"
+                        android:layout_width="15px"
+                        android:layout_height="15px"
+                        android:layout_marginRight="5px"
+                        android:src="@drawable/canlendardown" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/act_healthytest_indicator_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15px"
+                    android:layout_marginLeft="40px"
+                    android:layout_below="@+id/act_healthytest_datepicker_ll">
+
+                    <ImageView
+                        android:id="@+id/act_healthytest_indicator_green_iv"
+                        android:layout_width="15px"
+                        android:layout_height="15px"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/round_green_shape"/>
+
+                    <TextView
+                        android:id="@+id/act_healthytest_indicator_green_tv"
+                        android:layout_toRightOf="@id/act_healthytest_indicator_green_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5px"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="收缩压"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black_6"
+                        android:textSize="22px"
+                        android:layout_alignParentTop="true" />
+
+                    <ImageView
+                        android:layout_toRightOf="@id/act_healthytest_indicator_green_tv"
+                        android:id="@+id/act_healthytest_indicator_blue_iv"
+                        android:layout_centerVertical="true"
+                        android:layout_width="15px"
+                        android:layout_height="15px"
+                        android:layout_marginLeft="50px"
+                        android:src="@drawable/round_blue_shape"/>
+
+                    <TextView
+                        android:layout_toRightOf="@id/act_healthytest_indicator_blue_iv"
+                        android:id="@+id/act_healthytest_indicator_blue_tv"
+                        android:layout_marginLeft="5px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="舒张压"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black_6"
+                        android:textSize="22px"/>
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/act_healthytest_indicator_rl">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/act_healthytest_chart_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="26px"
+                        android:paddingBottom="25px"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/act_healthytest_lookdetail_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginBottom="10px"
+                        android:layout_marginRight="25px"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/act_healthytest_lookdetail_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="3px"
+                            android:text="更多"
+                            android:textColor="#a1a1a1"
+                            android:textSize="20px"
+                            android:layout_alignParentTop="true"/>
+
+                        <ImageView
+                            android:layout_width="20px"
+                            android:layout_alignParentTop="true"
+                            android:layout_height="20px"
+                            android:layout_gravity="center"
+                            android:src="@drawable/more"
+                            android:id="@+id/act_healthytest_lookdetail_iv" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+                </com.zhy.autolayout.AutoFrameLayout>
+                <TextView
+                    android:id="@+id/act_healthytest_messtip_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="250px"
+                    android:text="@string/none_info_tip"
+                    android:textColor="@color/gray_a1"
+                    android:textSize="22px"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/act_healthytest_handinput_tv"
+                    android:layout_width="100px"
+                    android:layout_height="50px"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/act_healthytest_datepicker_ll"
+                    android:layout_marginRight="25px"
+                    android:text="手动录入"
+                    android:gravity="center"
+                    android:textSize="20px"
+                    android:background="@drawable/bg_edittext_green"
+                    android:textColor="@color/testselectcolor"
+                    android:src="@drawable/bg_edittext_green" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

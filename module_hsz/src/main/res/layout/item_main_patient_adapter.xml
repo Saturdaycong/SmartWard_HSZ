@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:background="@drawable/shape_white_corner10"
+                                     android:orientation="vertical"
+                                     android:paddingLeft="8px"
+                                     android:paddingRight="8px"
+                                     android:elevation="2px"
+                                     android:id="@+id/item_main_patient_root"
+                                     android:layout_marginLeft="8px"
+                                     android:layout_marginTop="8px"
+                                     android:paddingBottom="4px">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="28px">
+
+        <TextView
+            android:id="@+id/item_main_patient_bennum_tv"
+            android:layout_width="70px"
+            android:layout_height="28px"
+            android:layout_centerVertical="true"
+            android:text="01床"
+            android:textColor="#474B60"
+            android:textSize="20px"/>
+
+        <TextView
+            android:id="@+id/item_main_patient_carelevel_tv"
+            android:layout_marginLeft="5px"
+            android:gravity="center"
+            android:layout_width="50px"
+            android:layout_height="16px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_red_corner4"
+            android:text="一级护理"
+            android:textColor="@color/app_white"
+            android:textSize="10px"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_marginTop="3px"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#E3E3FF"/>
+<com.zhy.autolayout.AutoLinearLayout
+    android:id="@+id/item_main_patient_all"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="5px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_main_patient_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="李某某"
+            android:textColor="@color/theme_blue"
+            android:textSize="20px"/>
+
+        <TextView
+            android:id="@+id/item_main_patient_sex_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8px"
+            android:text="男"
+            android:textColor="#7A7E97"
+            android:textSize="14px"/>
+
+        <TextView
+            android:id="@+id/item_main_patient_age_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8px"
+            android:text="27岁"
+            android:textColor="#7A7E97"
+            android:textSize="14px"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="住院号："
+            android:textColor="#474B60"
+            android:textSize="13px"/>
+
+        <TextView
+            android:lines="1"
+            android:id="@+id/item_main_patient_admitno_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            android:text="0000013412"
+            android:textColor="#474B60"
+            android:textSize="13px"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="入院时间："
+            android:textColor="#474B60"
+            android:textSize="13px"/>
+
+        <TextView
+            android:lines="1"
+            android:id="@+id/item_main_patient_admittime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2px"
+            android:text="2019-07-08"
+            android:textColor="@color/public_text_60"
+            android:textSize="13px"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="医生："
+            android:textColor="#474B60"
+            android:textSize="13px"/>
+
+        <TextView
+            android:id="@+id/item_main_patient_doc_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2px"
+            android:text="栗子"
+            android:textColor="#474B60"
+            android:textSize="13px"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="责任护士："
+            android:textColor="#474B60"
+            android:textSize="13px"/>
+
+        <TextView
+            android:id="@+id/item_main_patient_dutynurse_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2px"
+            android:text="李某某"
+            android:textColor="#474B60"
+            android:textSize="13px"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="值班护士："
+            android:textColor="#474B60"
+            android:textSize="13px"/>
+
+        <TextView
+            android:id="@+id/item_main_patient_watchnurse_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2px"
+            android:text="王某某"
+            android:textColor="#474B60"
+            android:textSize="12px"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_main_patient_new_tv"
+            android:visibility="invisible"
+            android:textSize="12px"
+            android:layout_width="22px"
+            android:layout_height="22px"
+            android:background="@drawable/shape_blue_oval"
+            android:gravity="center"
+            android:text="新"
+            android:textColor="@color/app_white"/>
+
+        <TextView
+            android:id="@+id/item_main_yuangan_tv"
+            android:visibility="invisible"
+            android:textSize="12px"
+            android:layout_width="22px"
+            android:layout_height="22px"
+            android:layout_marginLeft="3px"
+            android:background="@drawable/shape_pink_oval"
+            android:gravity="center"
+            android:text="敏"
+            android:textColor="@color/app_white"/>
+
+        <TextView
+            android:id="@+id/item_main_yachuang_tv"
+            android:visibility="invisible"
+            android:textSize="12px"
+            android:layout_width="22px"
+            android:layout_height="22px"
+            android:layout_marginLeft="3px"
+            android:background="@drawable/shape_yellow_oval"
+            android:gravity="center"
+            android:text="压"
+            android:textColor="@color/app_white"/>
+
+        <TextView
+            android:id="@+id/item_main_diedao_tv"
+            android:visibility="invisible"
+            android:textSize="12px"
+            android:layout_width="22px"
+            android:layout_height="22px"
+            android:layout_marginLeft="3px"
+            android:background="@drawable/shape_yellow_oval"
+            android:gravity="center"
+            android:text="跌"
+            android:textColor="@color/app_white"/>
+
+        <TextView
+            android:visibility="invisible"
+            android:textSize="12px"
+            android:layout_width="22px"
+            android:layout_height="22px"
+            android:layout_marginLeft="3px"
+            android:background="@drawable/shape_blue_oval"
+            android:gravity="center"
+            android:text="液"
+            android:textColor="@color/app_white"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

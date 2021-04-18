@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_e5">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.zhy.autolayout.AutoLinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+<com.zhy.autolayout.AutoRelativeLayout
+    android:background="@color/app_white"
+    android:layout_width="match_parent"
+    android:layout_height="80px">
+    <TextView
+        android:textColor="#3A3A3A"
+        android:textSize="30px"
+        android:layout_centerInParent="true"
+        android:text="个人信息"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/frag_me_edit_btn"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:text="编辑"
+        android:textColor="#3A3A3A"
+        android:textSize="25px"
+        android:layout_width="100px"
+        android:layout_height="match_parent"/>
+</com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.yanglao.ctt.eckctt.app.widget.InfoItemView
+        android:id="@+id/frag_me_item_name"
+        app:isXingHao="false"
+        app:title="姓名"
+        app:etHint="请输入姓名"
+        app:isEtEnable="false"
+        app:inputType="text"
+        android:layout_marginTop="5px"
+        android:layout_width="match_parent"
+        android:layout_height="60px"/>
+
+     <com.yanglao.ctt.eckctt.app.widget.InfoItemView
+         android:id="@+id/frag_me_item_sex"
+         android:layout_marginTop="1px"
+        app:isXingHao="true"
+        app:title="性别"
+        app:etHint="请输入性别"
+        app:isEtEnable="false"
+         app:isInput="false"
+        android:layout_width="match_parent"
+        android:layout_height="60px"/>
+
+     <com.yanglao.ctt.eckctt.app.widget.InfoItemView
+         android:id="@+id/frag_me_item_birth"
+         android:layout_marginTop="1px"
+        app:isXingHao="true"
+        app:title="出生日期"
+        app:etHint="请选择出生日期"
+        app:isEtEnable="false"
+         app:isInput="false"
+        android:layout_width="match_parent"
+        android:layout_height="60px"/>
+
+     <com.yanglao.ctt.eckctt.app.widget.InfoItemView
+         android:id="@+id/frag_me_item_height"
+         android:layout_marginTop="1px"
+        app:isXingHao="true"
+        app:title="身高"
+        app:etHint="请选择身高"
+        app:isEtEnable="false"
+         app:isInput="false"
+        android:layout_width="match_parent"
+        android:layout_height="60px"/>
+
+     <com.yanglao.ctt.eckctt.app.widget.InfoItemView
+         android:id="@+id/frag_me_item_weight"
+         android:layout_marginTop="1px"
+        app:isXingHao="false"
+        app:title="体重"
+        app:etHint="请选择体重"
+        app:isEtEnable="false"
+         app:isInput="false"
+        android:layout_width="match_parent"
+        android:layout_height="60px"/>
+
+     <com.yanglao.ctt.eckctt.app.widget.InfoItemView
+         android:id="@+id/frag_me_item_phone"
+         android:layout_marginTop="1px"
+        app:isXingHao="false"
+        app:title="联系方式"
+        app:etHint="请输入联系方式"
+        app:isEtEnable="false"
+         app:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="60px"/>
+
+     <com.yanglao.ctt.eckctt.app.widget.InfoItemView
+         android:id="@+id/frag_me_item_jinjiName"
+         android:layout_marginTop="1px"
+        app:isXingHao="false"
+        app:title="紧急联系人"
+        app:etHint="请输入紧急联系人"
+        app:isEtEnable="false"
+         app:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="60px"/>
+
+     <com.yanglao.ctt.eckctt.app.widget.InfoItemView
+         android:id="@+id/frag_me_item_jinjiPhone"
+         android:layout_marginTop="1px"
+        app:isXingHao="false"
+        app:title="紧急联系人电话"
+        app:etHint="请输入紧急联系人电话"
+        app:isEtEnable="false"
+         app:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="60px"/>
+
+      <com.yanglao.ctt.eckctt.app.widget.InfoItemView
+          android:id="@+id/frag_me_item_address"
+          android:layout_marginTop="1px"
+        app:isXingHao="false"
+        app:title="家庭住址"
+        app:etHint="请选择家庭住址"
+        app:isEtEnable="false"
+          app:isInput="false"
+        android:layout_width="match_parent"
+        android:layout_height="60px"/>
+     <com.yanglao.ctt.eckctt.app.widget.InfoItemView
+          android:id="@+id/frag_me_item_address_detail"
+          android:layout_marginTop="1px"
+        app:isXingHao="false"
+        app:title="详细地址"
+        app:etHint="请输入详细住址"
+        app:isEtEnable="false"
+         app:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="60px"/>
+
+      <com.yanglao.ctt.eckctt.app.widget.InfoItemView
+          android:id="@+id/frag_me_item_medicalhistory"
+          android:layout_marginTop="1px"
+        app:isXingHao="false"
+        app:title="过往病史"
+        app:etHint="请输入过往病史"
+        app:isEtEnable="false"
+          app:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="60px"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+</com.zhy.autolayout.AutoFrameLayout>

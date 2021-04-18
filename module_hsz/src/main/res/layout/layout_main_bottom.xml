@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="60px"
+                                       android:background="@color/app_white"
+                                       android:elevation="4px"
+                                       android:id="@+id/layout_main_bottom"
+                                       android:orientation="horizontal">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/layout_main_bottom_all"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/act_health_monitor_tip"
+            android:textColor="@color/public_text_99"
+            android:layout_gravity="center_vertical"
+            android:textSize="20px"
+            android:text="后台刷新中..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_marginLeft="10px"
+            android:id="@+id/layout_main_bottom_refresh_btn"
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_top_btn">
+
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_refresh"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/layout_main_bottom_set_btn"
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_top_btn">
+
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_set"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/layout_main_bottom_health_btn"
+            android:layout_width="120px"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_top_btn">
+
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_manage_server"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/layout_main_bottom_tab_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/layout_main_bottom_all">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:id="@+id/layout_main_bottom_version_tv"
+        android:layout_margin="3px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="12px"
+        android:textColor="@color/public_text_33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</com.zhy.autolayout.AutoRelativeLayout>

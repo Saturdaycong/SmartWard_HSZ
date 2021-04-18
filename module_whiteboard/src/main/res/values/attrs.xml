@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--编辑框的样式-->
+    <declare-styleable name="CellItemView">
+        <attr name="title" format="reference|string" />
+        <attr name="content" format="reference|string" />
+        <attr name="empty_gravity" format="reference|string"/>
+        <attr name="et_weight" format="integer"/>
+        <attr name="titlesize" format="dimension"/>
+    </declare-styleable>
+
+</resources>

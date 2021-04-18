@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1500px"
+    android:layout_height="800px"
+    android:background="@drawable/bg_item_max"
+    android:paddingLeft="32px"
+    android:paddingRight="32px"
+    android:paddingBottom="6px"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+<TextView
+    android:id="@+id/item_health_monitor_xiaoqu"
+    android:layout_marginTop="28px"
+    android:textColor="#FEFEFE"
+    android:textSize="50px"
+    android:text="爱国社区-万家小区1-129"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="10px"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--左1-->
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_marginLeft="12px"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/item_health_monitor_name"
+                    android:textSize="75px"
+                    android:textColor="@color/text_white"
+                    android:text="张三"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:src="@drawable/xb_nn_x"
+                    android:id="@+id/item_health_monitor_sex"
+                    android:layout_marginLeft="44px"
+                    android:layout_width="68px"
+                    android:layout_height="68px"/>
+                <TextView
+                    android:id="@+id/item_health_monitor_age"
+                    android:layout_marginLeft="16px"
+                    android:textSize="40px"
+                    android:textColor="@color/text_white"
+                    android:text="55 岁"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:id="@+id/item_health_monitor_huliinfo"
+                android:layout_marginTop="24px"
+                android:textColor="@color/text_white"
+                android:textSize="32px"
+                android:text="护理编号：0390021      健康管家: 张幻雪"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_marginTop="18px"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/dialog_health_monitor_video_iv"
+                    android:src="@drawable/sxt_th_l"
+                    android:layout_width="68px"
+                    android:layout_height="71px"/>
+                <TextView
+                    android:id="@+id/item_health_monitor_video"
+                    android:gravity="bottom"
+                    android:textSize="32px"
+                    android:textColor="@color/text_white"
+                    android:text="26次\n3天前通话"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/dialog_health_monitor_yuyue_arl"
+                    android:layout_marginLeft="32px"
+                    android:layout_width="66px"
+                    android:layout_height="66px">
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/msg_min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:gravity="center"
+                        android:textSize="18px"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/white"
+                        android:background="@drawable/shape_ovel_10"
+                        android:text="1"
+                        android:layout_width="30px"
+                        android:layout_height="30px"/>
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                 <com.zhy.autolayout.AutoRelativeLayout
+                     android:id="@+id/dialog_health_monitor_audio_arl"
+                     android:layout_marginLeft="14px"
+                    android:layout_width="66px"
+                    android:layout_height="66px">
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/voice_min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                     <TextView
+                         android:gravity="center"
+                         android:textSize="18px"
+                         android:layout_alignParentRight="true"
+                         android:textColor="@color/white"
+                         android:background="@drawable/shape_ovel_10"
+                         android:text="1"
+                         android:layout_width="30px"
+                         android:layout_height="30px"/>
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                 <com.zhy.autolayout.AutoRelativeLayout
+                     android:id="@+id/dialog_health_monitor_shop_arl"
+                     android:layout_marginLeft="14px"
+                    android:layout_width="66px"
+                    android:layout_height="66px">
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/car_min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                     <TextView
+                         android:gravity="center"
+                         android:textSize="18px"
+                         android:layout_alignParentRight="true"
+                         android:textColor="@color/white"
+                         android:background="@drawable/shape_ovel_10"
+                         android:text="1"
+                         android:layout_width="30px"
+                         android:layout_height="30px"/>
+                </com.zhy.autolayout.AutoRelativeLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_marginTop="22px"
+            android:layout_marginLeft="24px"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/c_bj_x"
+                android:layout_width="130px"
+                android:layout_height="130px"/>
+
+            <TextView
+                android:id="@+id/dialog_health_monitor_bingshi_tv"
+                android:gravity="center"
+                android:background="@drawable/shape_transwhite_8"
+                android:layout_marginTop="18px"
+                android:textSize="32px"
+                android:textColor="@color/text_white"
+                android:text="病史"
+                android:layout_width="130px"
+                android:layout_height="44px"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_marginRight="20px"
+            android:layout_marginLeft="26px"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/dialog_health_monitor_vip_iv"
+                android:layout_marginTop="8px"
+                android:scaleType="fitXY"
+                android:src="@drawable/vip_min"
+                android:layout_width="80px"
+                android:layout_height="100px"/>
+
+            <TextView
+                android:layout_marginTop="6px"
+                android:textColor="#FEEBAD"
+                android:textSize="24px"
+                android:text="剩余360天"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/dialog_health_monitor_healthreport_tv"
+                android:gravity="center"
+                android:background="@drawable/shape_transwhite_8"
+                android:layout_marginTop="28px"
+                android:textSize="24px"
+                android:textColor="@color/text_white"
+                android:text="健康报告"
+                android:layout_width="130px"
+                android:layout_height="44px"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_marginBottom="20px"
+        android:layout_marginTop="14px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="190px">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/item_health_monitor_leftiv"
+            android:src="@drawable/left_btn"
+            android:layout_width="62px"
+            android:layout_height="62px"/>
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/item_health_monitor_rightiv"
+            android:src="@drawable/right_btn"
+            android:layout_width="62px"
+            android:layout_height="62px"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_toLeftOf="@id/item_health_monitor_rightiv"
+            android:layout_toRightOf="@id/item_health_monitor_leftiv"
+            android:id="@+id/item_health_monitor_rv"
+            android:layout_marginLeft="16px"
+            android:layout_marginRight="16px"
+            android:layout_width="wrap_content"
+            android:layout_height="210px"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>
